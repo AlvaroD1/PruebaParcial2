@@ -1,0 +1,11 @@
+Necesito ayuda creando un programa que simule un torneo de tenis con 16 jugadores formato eliminacion directa. Cada partido es de 3 set gana quien primero gane 2 sets. las rondas van 4tos, 8vos, semifinal y final, las rondas se juegan en simultaneo y la siguiente ronda se jugara solo cuando haya terminado la ronda actual. cada set se gana aleatoriamente se debe mostrar el ganador de cada set y el resultado final del partido, tambien simula un duracion de cada partido entre 1.5 y 2 segundos. Usa lenguaje java y centrate en el uso de callable, future y executorService. un ejemplo del resultado seria este: 
+===== OCTAVOS DE FINAL ===== 
+Jugador 1 vs Jugador 16 
+Set 1: Jugador 16 
+Set 2: Jugador 1 
+Set 3: Jugador 1 
+Ganador del partido: Jugador 1
+
+
+
+
