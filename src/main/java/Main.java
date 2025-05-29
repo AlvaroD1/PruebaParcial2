@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 public class Main {
+    @SuppressWarnings("unused")
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         List<Jugador> jugadores = new ArrayList<>();
         for (int i = 1; i <= 16; i++) {
@@ -34,7 +35,7 @@ public class Main {
                 jugadores = new ArrayList<>(ganadores);
                 partidosPorRonda /= 2;
             }
-            System.out.println("¡Campeón del torneo: " + jugadores.get(0).getNombre() + "!");
+            System.out.println("¡Campeón del torneo: " + jugadores.getFirst().getNombre() + "!");
             executor.shutdown();
         }
     }
