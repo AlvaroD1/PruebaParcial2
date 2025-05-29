@@ -24,7 +24,7 @@ public class Partido implements Callable<Partido.ResultadoPartido> {
             else setsJ2++;
             set++;
         }
-        //Simiula duracion entre 1.5 y 2 segundos por partido
+        //Simula la duracion entre 1.5 y 2 segundos por partido
         try {
             Thread.sleep(1500 + random.nextInt(500));
         } catch (InterruptedException e) {
