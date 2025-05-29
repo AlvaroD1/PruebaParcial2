@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.concurrent.*;
-@SuppressWarnings("unused")
+
 public class Main {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         List<Jugador> jugadores = new ArrayList<>();
