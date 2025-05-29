@@ -18,7 +18,12 @@ public class Partido implements Callable<Partido.ResultadoPartido> {
         int setsJ1 = 0, setsJ2 = 0, set = 1;
         List<String> resultadosSets = new ArrayList<>();
         while (setsJ1 < 2 && setsJ2 < 2) {
-            Jugador ganadorSet = random.nextBoolean() ? jugador1 : jugador2;
+            Jugador ganadorSet;
+            if (random.nextBoolean()) {
+                ganadorSet = jugador1;
+            } else {
+                ganadorSet = jugador2;
+            }
             resultadosSets.add("Set " + set + ": " + ganadorSet.getNombre());
             if (ganadorSet == jugador1) setsJ1++;
             else setsJ2++;
