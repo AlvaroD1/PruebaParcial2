@@ -1,9 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
-
+@SuppressWarnings("unused")
 public class Main {
-    @SuppressWarnings("unused")
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         List<Jugador> jugadores = new ArrayList<>();
         for (int i = 1; i <= 16; i++) {
