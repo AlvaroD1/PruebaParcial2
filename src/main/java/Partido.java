@@ -31,7 +31,12 @@ public class Partido implements Callable<Partido.ResultadoPartido> {
             Thread.currentThread().interrupt();
         }
         // Determinar el ganador del partido
-        Jugador ganador = setsJ1 == 2 ? jugador1 : jugador2;
+        Jugador ganador;
+        if (setsJ1 == 2) {
+            ganador = jugador1;
+        } else {
+            ganador = jugador2;
+        }
         return new ResultadoPartido(jugador1, jugador2, resultadosSets, ganador);
     }
 
